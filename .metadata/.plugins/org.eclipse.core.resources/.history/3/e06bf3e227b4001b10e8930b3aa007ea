@@ -1,0 +1,28 @@
+package ebru.hrms.entities.concretes;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table(name = "job-positions")
+@Data
+public class JobPosition {
+
+	@Column(name = "id")
+	private int id;
+	
+	@Column(name = "title")
+	private String title;
+	
+	public JobPosition() {
+		
+	}
+
+	public JobPosition(int id) {
+		super();
+		this.id = id;
+	}
+}
